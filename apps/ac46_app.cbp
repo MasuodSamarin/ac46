@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ac46" />
+		<Option pch_mode="2" />
+		<Option compiler="dv10" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\dv10_example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="dv10" />
+				<Option autodetectfilechange="1" />
+				<Option generateeachlit="0" />
+				<Option useflatobjects="0" />
+				<Option usefullsourcepaths="0" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-g" />
+					<Add option="-Os" />
+					<Add option="-fno-delete-null-pointer-checks" />
+					<Add option="-mlong-calls" />
+					<Add option="-DUSE_RTOS" />
+					<Add option="-DNOFLOAT" />
+					<Add option="-D_ADSP_" />
+					<Add option="-DEMBEDDED" />
+					<Add option="-DBT15" />
+					<Add option="-DHAVE_MALLOC" />
+					<Add directory="code\cpu\ac46\include" />
+					<Add directory="code\include" />
+					<Add directory="code\include\decode_mp3" />
+					<Add directory="code\include\drv" />
+					<Add directory="code\include\os" />
+					<Add directory="code\include\sd" />
+					<Add directory="code\include\tff" />
+					<Add directory="C:\JL\dv10\include" />
+					<Add directory="code\include\vm" />
+					<Add directory="code\common\os_api" />
+					<Add directory="code\apps\rtc" />
+					<Add directory="code\apps\bt" />
+					<Add directory="code\apps\linein" />
+					<Add directory="code\apps\main" />
+					<Add directory="code\apps\music" />
+					<Add directory="code\apps\fm" />
+					<Add directory="code\apps\usb_device" />
+					<Add directory="code\include\usb" />
+					<Add directory="code\common\dev_manage" />
+					<Add directory="code\common\file_operate" />
+					<Add directory="code\common\audio_ef" />
+					<Add directory="code\cpu\ac46\driver" />
+					<Add directory="code\include\fm" />
+					<Add directory="code\apps\bt\aec" />
+					<Add directory="code\common\ui" />
+					<Add directory="code\apps\idle" />
+					<Add directory="code\common\voice_prompt" />
+					<Add directory="code\apps\bt\btstack" />
+					<Add directory="code\apps\record" />
+					<Add directory="code\libs\lib_h" />
+				</Compiler>
+				<Linker>
+					<Add option="-Tram.ld" />
+					<Add option="-M=map.txt" />
+					<Add library="code\libs\dec_lib_ac46.a" />
+					<Add library="code\libs\cbuf.a" />
+					<Add library="code\libs\lib_dac.a" />
+					<Add library="code\libs\sys_cfg_ac46.a" />
+					<Add library="code\libs\aec_ac46.a" />
+					<Add library="code\libs\libSpeech_dection.a" />
+					<Add library="code\libs\libDAGC.a" />
+					<Add library="code\libs\libsbcdeocode.a" />
+					<Add library="code\libs\lib_mp3_decode.a" />
+					<Add library="code\libs\lib_wav_decode.a" />
+					<Add library="code\libs\ef_api_ac46.a" />
+					<Add library="code\libs\lib_audio_effect.a" />
+					<Add library="code\libs\lib_wma_decode.a" />
+					<Add library="code\libs\dev_mg_lib.a" />
+					<Add library="code\libs\libtff.a" />
+					<Add library="code\libs\mem_ac46.a" />
+					<Add library="code\libs\sd.a" />
+					<Add library="code\libs\usb.a" />
+					<Add library="code\libs\librtos_bt15.a" />
+					<Add library="code\libs\lib_cache_vm_bt15.a" />
+					<Add library="code\libs\sydf_ac46.a" />
+					<Add library="code\libs\lib_fm_resample.a" />
+					<Add library="code\libs\lib_fm_driver.a" />
+					<Add library="code\libs\libBtCalling.a" />
+					<Add library="code\libs\lib_usb_syn.a" />
+					<Add library="code\libs\libbt_bt15.a" />
+					<Add library="code\libs\lib_btrepair.a" />
+					<Add library="code\libs\lib_aac_decode.a" />
+					<Add library="code\libs\libBt_a2dp_sync.a" />
+					<Add library="code\libs\clk_ac46.a" />
+					<Add library="code\libs\lib_ape_decode.a" />
+					<Add library="code\libs\lib_flac_decode.a" />
+					<Add library="code\libs\lib_encode.a" />
+					<Add library="code\libs\lib_adpcm_encode.a" />
+					<Add library="code\libs\lib_mp2_encode.a" />
+					<Add directory="\lib" />
+					<Add directory="C:\JL\bfin\lib" />
+					<Add directory="C:\JL\dv10\lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="ac46\pre.bat" />
+					<Add after="ac46\r_makebin.bat" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\dv10_example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="dv10" />
+				<Option autodetectfilechange="0" />
+				<Option generateeachlit="0" />
+				<Option useflatobjects="0" />
+				<Option usefullsourcepaths="0" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Os" />
+					<Add directory="code\Peripherals" />
+					<Add directory="code\start" />
+					<Add directory="code\common" />
+					<Add directory="C:\JL\bfin\include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lc" />
+					<Add option="-lgcc" />
+					<Add directory="C:\JL\bfin\lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory=".\" />
+		</Compiler>
+		<Unit filename="code\apps\bt\aec\aec_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\bt\aec\aec_api.h" />
+		<Unit filename="code\apps\bt\btstack\avctp_user.h" />
+		<Unit filename="code\apps\bt\btstack\bt_configs_user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\bt\btstack\bt_key_deal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\bt\btstack\bt_key_deal.h" />
+		<Unit filename="code\apps\bt\btstack\bt_key_msg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\bt\btstack\fcc_test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\bt\btstack\fcc_test.h" />
+		<Unit filename="code\apps\fm\fm_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\fm\fm_api.h" />
+		<Unit filename="code\apps\fm\fm_define.h" />
+		<Unit filename="code\apps\fm\fm_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\fm\fm_key.h" />
+		<Unit filename="code\apps\fm\fm_prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\fm\fm_prompt.h" />
+		<Unit filename="code\apps\fm\fm_radio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\fm\fm_radio.h" />
+		<Unit filename="code\apps\fm\fm_resample.h" />
+		<Unit filename="code\apps\fm\fmrx_driver.h" />
+		<Unit filename="code\apps\idle\idle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\idle\idle.h" />
+		<Unit filename="code\apps\idle\idle_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\idle\idle_key.h" />
+		<Unit filename="code\apps\linein\dev_linein.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\linein\dev_linein.h" />
+		<Unit filename="code\apps\linein\linein.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\linein\linein.h" />
+		<Unit filename="code\apps\linein\linein_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\linein\linein_key.h" />
+		<Unit filename="code\apps\linein\linein_prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\linein\linein_prompt.h" />
+		<Unit filename="code\apps\main\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\main\main_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\main\main_key.h" />
+		<Unit filename="code\apps\main\vm_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\main\vm_api.h" />
+		<Unit filename="code\apps\music\ef_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\music\ef_api.h" />
+		<Unit filename="code\apps\music\music.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\music\music.h" />
+		<Unit filename="code\apps\music\music_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\music\music_info.h" />
+		<Unit filename="code\apps\music\music_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\music\music_key.h" />
+		<Unit filename="code\apps\music\music_prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\music\music_prompt.h" />
+		<Unit filename="code\apps\music\play_sel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\music\play_sel.h" />
+		<Unit filename="code\apps\record\adpcm_encode_api.h" />
+		<Unit filename="code\apps\record\mp2_encode_api.h" />
+		<Unit filename="code\apps\record\rec_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\record\rec_key.h" />
+		<Unit filename="code\apps\record\record.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\irtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\irtc.h" />
+		<Unit filename="code\apps\rtc\rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\rtc.h" />
+		<Unit filename="code\apps\rtc\rtc_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\rtc_key.h" />
+		<Unit filename="code\apps\rtc\rtc_low_power.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\rtc_low_power.h" />
+		<Unit filename="code\apps\rtc\rtc_prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\rtc_prompt.h" />
+		<Unit filename="code\apps\rtc\rtc_setting.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\rtc\rtc_setting.h" />
+		<Unit filename="code\apps\usb_device\dev_pc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\usb_device\pc_prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\usb_device\pc_prompt.h" />
+		<Unit filename="code\apps\usb_device\usb_device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\usb_device\usb_device.h" />
+		<Unit filename="code\apps\usb_device\usb_key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\apps\usb_device\usb_key.h" />
+		<Unit filename="code\common\ASCII_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\audio_ef\audio_ef.h" />
+		<Unit filename="code\common\audio_ef\audio_ef_parm.h" />
+		<Unit filename="code\common\audio_ef\audio_effect.h" />
+		<Unit filename="code\common\common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\dev_manage\dev_ctl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\dev_manage\dev_ctl.h" />
+		<Unit filename="code\common\dev_manage\drv_manage.h" />
+		<Unit filename="code\common\dev_manage\mango_dev_cache.h" />
+		<Unit filename="code\common\fcvt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\file_operate\file_op.h" />
+		<Unit filename="code\common\file_operate\file_op_err.h" />
+		<Unit filename="code\common\file_operate\file_operate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\file_operate\file_operate.h" />
+		<Unit filename="code\common\file_operate\fs_io_h.h" />
+		<Unit filename="code\common\file_operate\logic_dev_list.h" />
+		<Unit filename="code\common\os_api\os_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\os_api\task_manage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\os_api\task_manage.h" />
+		<Unit filename="code\common\printf-stdarg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\ui\led7_drv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\ui\led7_drv.h" />
+		<Unit filename="code\common\ui\led_ui_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\ui\ui_api.h" />
+		<Unit filename="code\common\ui\ui_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\ui\ui_common.h" />
+		<Unit filename="code\common\voice_prompt\voice_prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\voice_prompt\voice_prompt.h" />
+		<Unit filename="code\cpu\ac46\board\board_bt15_v0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\M62429.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\M62429.h" />
+		<Unit filename="code\cpu\ac46\driver\clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\dac_api.h" />
+		<Unit filename="code\cpu\ac46\driver\encoder.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\encoder.h" />
+		<Unit filename="code\cpu\ac46\driver\interrupt_isr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\interrupt_isr.h" />
+		<Unit filename="code\cpu\ac46\driver\key.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\key_drv_ad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\key_drv_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\key_drv_ir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\key_drv_tch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\key_voice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\key_voice.h" />
+		<Unit filename="code\cpu\ac46\driver\kok_detect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\kok_detect.h" />
+		<Unit filename="code\cpu\ac46\driver\ladc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\led.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\low_power.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\low_power.h" />
+		<Unit filename="code\cpu\ac46\driver\pt2313.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\pt2313.h" />
+		<Unit filename="code\cpu\ac46\driver\sys_detect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\driver\uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\cpu\ac46\include\SPI.h" />
+		<Unit filename="code\cpu\ac46\include\ac46.h" />
+		<Unit filename="code\cpu\ac46\include\alink.h" />
+		<Unit filename="code\cpu\ac46\include\app_cfg.h" />
+		<Unit filename="code\cpu\ac46\include\asm_type.h" />
+		<Unit filename="code\cpu\ac46\include\clock.h" />
+		<Unit filename="code\cpu\ac46\include\clock_api.h" />
+		<Unit filename="code\cpu\ac46\include\clock_app.h" />
+		<Unit filename="code\cpu\ac46\include\clock_hal.h" />
+		<Unit filename="code\cpu\ac46\include\clock_moudle.h" />
+		<Unit filename="code\cpu\ac46\include\config.h" />
+		<Unit filename="code\cpu\ac46\include\dac.h" />
+		<Unit filename="code\cpu\ac46\include\dled.h" />
+		<Unit filename="code\cpu\ac46\include\error_code.h" />
+		<Unit filename="code\cpu\ac46\include\fat_sys.h" />
+		<Unit filename="code\cpu\ac46\include\hwi.h" />
+		<Unit filename="code\cpu\ac46\include\interrupt.h" />
+		<Unit filename="code\cpu\ac46\include\key.h" />
+		<Unit filename="code\cpu\ac46\include\key_drv_ad.h" />
+		<Unit filename="code\cpu\ac46\include\key_drv_io.h" />
+		<Unit filename="code\cpu\ac46\include\key_drv_ir.h" />
+		<Unit filename="code\cpu\ac46\include\key_drv_touch.h" />
+		<Unit filename="code\cpu\ac46\include\mmu.h" />
+		<Unit filename="code\cpu\ac46\include\prompt_tone.h" />
+		<Unit filename="code\cpu\ac46\include\spiflash.h" />
+		<Unit filename="code\cpu\ac46\include\sys_idle.h" />
+		<Unit filename="code\cpu\ac46\include\timer.h" />
+		<Unit filename="code\cpu\ac46\include\uart.h" />
+		<Unit filename="code\include\ASCII_lib.h" />
+		<Unit filename="code\include\circular_buf.h" />
+		<Unit filename="code\include\common.h" />
+		<Unit filename="code\include\decode_mp3\if_decoder_ctrl.h" />
+		<Unit filename="code\include\drv\device_driver.h" />
+		<Unit filename="code\include\drv\ioctl.h" />
+		<Unit filename="code\include\err.h" />
+		<Unit filename="code\include\errno-base.h" />
+		<Unit filename="code\include\fcvt.h" />
+		<Unit filename="code\include\includes.h" />
+		<Unit filename="code\include\jiffies.h" />
+		<Unit filename="code\include\list.h" />
+		<Unit filename="code\include\malloc.h" />
+		<Unit filename="code\include\module.h" />
+		<Unit filename="code\include\os\os_api.h" />
+		<Unit filename="code\include\os\os_cfg.h" />
+		<Unit filename="code\include\os\os_cpu.h" />
+		<Unit filename="code\include\printf.h" />
+		<Unit filename="code\include\run_loop.h" />
+		<Unit filename="code\include\system_cfg.h" />
+		<Unit filename="code\include\tff\diskio.h" />
+		<Unit filename="code\include\tff\ff_api.h" />
+		<Unit filename="code\include\tff\tff.h" />
+		<Unit filename="code\include\typedef.h" />
+		<Unit filename="map.txt" />
+		<Unit filename="ram.ld" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="code\apps\bt\aec\aec_api.c" open="0" top="0" tabpos="0">
+		<Cursor position="1015" topLine="16" />
+	</File>
+	<File name="code\apps\bt\btstack\bt_configs_user.c" open="0" top="0" tabpos="0">
+		<Cursor position="1874" topLine="62" />
+	</File>
+	<File name="code\apps\bt\btstack\bt_key_deal.c" open="0" top="0" tabpos="0">
+		<Cursor position="4708" topLine="171" />
+	</File>
+	<File name="code\apps\bt\btstack\bt_key_msg.c" open="0" top="0" tabpos="0">
+		<Cursor position="511" topLine="26" />
+	</File>
+	<File name="code\apps\fm\fm_api.c" open="0" top="0" tabpos="0">
+		<Cursor position="5099" topLine="180" />
+	</File>
+	<File name="code\apps\fm\fm_key.c" open="0" top="0" tabpos="0">
+		<Cursor position="231" topLine="14" />
+	</File>
+	<File name="code\apps\fm\fm_radio.c" open="0" top="0" tabpos="0">
+		<Cursor position="27262" topLine="905" />
+	</File>
+	<File name="code\apps\linein\dev_linein.c" open="0" top="0" tabpos="0">
+		<Cursor position="381" topLine="12" />
+	</File>
+	<File name="code\apps\linein\linein.c" open="0" top="0" tabpos="0">
+		<Cursor position="5985" topLine="228" />
+	</File>
+	<File name="code\apps\linein\linein_key.c" open="0" top="0" tabpos="0">
+		<Cursor position="429" topLine="9" />
+	</File>
+	<File name="code\apps\main\vm_api.c" open="0" top="0" tabpos="0">
+		<Cursor position="948" topLine="24" />
+	</File>
+	<File name="code\apps\main\vm_api.h" open="0" top="0" tabpos="0">
+		<Cursor position="708" topLine="30" />
+	</File>
+	<File name="code\apps\music\ef_api.c" open="0" top="0" tabpos="0">
+		<Cursor position="2581" topLine="79" />
+	</File>
+	<File name="code\apps\music\music.c" open="0" top="0" tabpos="0">
+		<Cursor position="13118" topLine="480" />
+	</File>
+	<File name="code\apps\music\music_info.c" open="0" top="0" tabpos="0">
+		<Cursor position="1892" topLine="73" />
+	</File>
+	<File name="code\apps\music\music_info.h" open="0" top="0" tabpos="0">
+		<Cursor position="220" topLine="0" />
+	</File>
+	<File name="code\apps\music\music_key.c" open="0" top="0" tabpos="0">
+		<Cursor position="796" topLine="26" />
+	</File>
+	<File name="code\apps\music\music_prompt.c" open="0" top="0" tabpos="0">
+		<Cursor position="7290" topLine="219" />
+	</File>
+	<File name="code\apps\record\rec_key.c" open="0" top="0" tabpos="0">
+		<Cursor position="324" topLine="10" />
+	</File>
+	<File name="code\apps\record\record.c" open="0" top="0" tabpos="0">
+		<Cursor position="5186" topLine="175" />
+	</File>
+	<File name="code\apps\usb_device\usb_key.c" open="0" top="0" tabpos="0">
+		<Cursor position="244" topLine="9" />
+	</File>
+	<File name="code\common\dev_manage\dev_ctl.c" open="0" top="0" tabpos="0">
+		<Cursor position="3652" topLine="105" />
+	</File>
+	<File name="code\common\os_api\task_manage.c" open="0" top="0" tabpos="0">
+		<Cursor position="5891" topLine="246" />
+	</File>
+	<File name="code\common\ui\led7_drv.h" open="0" top="0" tabpos="2">
+		<Cursor position="55728" topLine="576" />
+	</File>
+	<File name="code\common\voice_prompt\voice_prompt.c" open="0" top="0" tabpos="0">
+		<Cursor position="581" topLine="11" />
+	</File>
+	<File name="code\cpu\ac46\board\board_bt15_v0.c" open="0" top="0" tabpos="0">
+		<Cursor position="3808" topLine="126" />
+	</File>
+	<File name="code\cpu\ac46\driver\clock.c" open="0" top="0" tabpos="0">
+		<Cursor position="230" topLine="9" />
+	</File>
+	<File name="code\cpu\ac46\driver\dac.c" open="0" top="0" tabpos="0">
+		<Cursor position="6564" topLine="306" />
+	</File>
+	<File name="code\cpu\ac46\driver\encoder.c" open="0" top="0" tabpos="0">
+		<Cursor position="444" topLine="23" />
+	</File>
+	<File name="code\cpu\ac46\driver\key_drv_io.c" open="0" top="0" tabpos="0">
+		<Cursor position="1980" topLine="103" />
+	</File>
+	<File name="code\cpu\ac46\driver\key_drv_ir.c" open="0" top="0" tabpos="0">
+		<Cursor position="16402" topLine="463" />
+	</File>
+	<File name="code\cpu\ac46\driver\key_voice.c" open="0" top="0" tabpos="0">
+		<Cursor position="1449" topLine="90" />
+	</File>
+	<File name="code\cpu\ac46\driver\led.c" open="0" top="0" tabpos="0">
+		<Cursor position="6502" topLine="403" />
+	</File>
+	<File name="code\cpu\ac46\driver\low_power.c" open="0" top="0" tabpos="0">
+		<Cursor position="2954" topLine="109" />
+	</File>
+	<File name="code\cpu\ac46\driver\timer.c" open="0" top="0" tabpos="0">
+		<Cursor position="8898" topLine="435" />
+	</File>
+	<File name="code\cpu\ac46\include\config.h" open="0" top="0" tabpos="0">
+		<Cursor position="6100" topLine="153" />
+	</File>
+</CodeBlocks_layout_file>

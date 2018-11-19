@@ -1,0 +1,1 @@
+.\app_pkg\CD03_Bank_Link.exe -boot 0x2000 -bank 0x- 1-0 -infile bank.bin -outfile .\app_pkg\uboot.boot 

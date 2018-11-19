@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ac46_uboot" />
+		<Option pch_mode="2" />
+		<Option compiler="dv10" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\dv10_example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="dv10" />
+				<Option autodetectfilechange="0" />
+				<Option generateeachlit="0" />
+				<Option useflatobjects="0" />
+				<Option usefullsourcepaths="0" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-fno-builtin-putchar" />
+					<Add option="-unused-value" />
+					<Add option="-parentheses" />
+					<Add option="-sequence-point" />
+					<Add option="-sign-compare" />
+					<Add option="-packed" />
+					<Add option="-unreachable-code" />
+					<Add option="-return-type" />
+					<Add option="-D_ADSP_" />
+					<Add option="-DNOFLOAT" />
+					<Add option="-DSD_USE_CMD_CHECK_EN" />
+					<Add directory="code\common" />
+					<Add directory="code\start" />
+					<Add directory="C:\JL\dv10\include" />
+					<Add directory="code\include\boot_header" />
+				</Compiler>
+				<Linker>
+					<Add option="-lc" />
+					<Add option="-lgcc" />
+					<Add option="-Tram.ld" />
+					<Add option="-M=map.txt" />
+					<Add library="code\libs\lib_ac46_uboot.a" />
+					<Add library="code\libs\lib_dac.a" />
+					<Add library="code\libs\cbuf.a" />
+					<Add directory="\lib" />
+					<Add directory="C:\JL\dv10\lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after=".\app_pkg\r_makebin.bat" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\dv10_example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="dv10" />
+				<Option autodetectfilechange="0" />
+				<Option generateeachlit="0" />
+				<Option useflatobjects="0" />
+				<Option usefullsourcepaths="0" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Os" />
+					<Add option="-g" />
+					<Add directory="code\Peripherals" />
+					<Add directory="code\start" />
+					<Add directory="code\common" />
+				</Compiler>
+				<Linker>
+					<Add option="-lc" />
+					<Add option="-lgcc" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="r_makebin.bat" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory=".\" />
+		</Compiler>
+		<Unit filename="code\common\bt15.h" />
+		<Unit filename="code\common\common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\common.h" />
+		<Unit filename="code\common\config.h" />
+		<Unit filename="code\common\dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\dac.h" />
+		<Unit filename="code\common\driver_bank.h" />
+		<Unit filename="code\common\fcvt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\fcvt.h" />
+		<Unit filename="code\common\key_voice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\key_voice.h" />
+		<Unit filename="code\common\printf-stdarg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\common\printf.h" />
+		<Unit filename="code\common\startup.h" />
+		<Unit filename="code\common\typedef.h" />
+		<Unit filename="code\common\uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="code\start\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ram.ld" />
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

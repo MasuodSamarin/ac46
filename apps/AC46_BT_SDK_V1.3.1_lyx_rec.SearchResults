@@ -1,0 +1,5 @@
+---- IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC Matches (4 in 3 files) ----
+config_SSM_Q535_OPTI_04FB_AC4601.H (code\cpu\ac46\include):479:    #define IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC	
+Key_drv_ir.c (code\cpu\ac46\driver):127:#elif defined(IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC) 
+Key_drv_ir.c (code\cpu\ac46\driver):128:     #include "IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC.c"	 
+Key_msg.h (code\include):337:#elif defined(IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC)    

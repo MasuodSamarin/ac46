@@ -1,0 +1,421 @@
+
+
+
+//  KEY 
+#ifdef adk_user_6_key_mode
+   #include "adk_ty_6key_msg.h"
+#elif defined( adk_user_4_key_mode_1 )     //三键+light   
+    #include "adk_ty_4key_msg_1.h"    //长按PP 为灯控15K   call
+ #elif defined(LED_KEY_USE_GW_J_H03_A_4KEY)
+   #include "LED_KEY_USE_GW_J_H03_A_4KEY_MSG.h  "
+   #include "ADK_USE_AZS_TY_22K_9KEY_MSG.h"   
+#elif defined( ADK_USE_AZS_TY_22K_10KEY )&& !defined(LED_KEY_USE_GW_J_H03_A_4KEY)     //三键+light   
+    #include "ADK_USE_AZS_TY_22K_10KEY.h"    //长按PP 为灯控15K   call
+#elif defined(adk_user_6_key_mode_2)
+   #include "adk_ty_6key_msg_2.h"   //长按MODE 关屏 
+ #elif defined(adk_user_6_key_mode_3)
+    #include "adk_ty_6key_msg_3.h"    //长按PP 为灯控15K   call
+#elif defined(adk_user_3_4_6_key_mode)
+   #include "adk_ty_346key_msg.h"   
+#elif defined(adkey_22k_6key_mode_sm)
+   #include "adkey_22k_6key_mode_sm_msg.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK_ET5330MB_E)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK_ET5330MB_E.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_6VOICE)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_6VOICE.h"   
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC_REC)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC_REC_MSG.h"   
+#elif defined(ADK_USE_JC_10KEY_MSG)
+   #include "ADK_USE_JC_10KEY_MSG.h"   
+#elif defined(ADK_USE_GW_22Kup_48PIN_GENERAL_11KEY_REC)
+   #include "ADK_USE_GW_22Kup_48PIN_GENERAL_11KEY_REC.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_5KEY_KOK)
+   #include "ADK_USE_ZY_GENERAL_22Kup_5KEY_KOK_MSG.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_5KEY_KOK_REC)
+   #include "ADK_USE_ZY_GENERAL_22Kup_5KEY_KOK_REC_MSG.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_5KEY_REC)
+   #include "ADK_USE_ZY_GENERAL_22Kup_5KEY_REC_MSG.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_SA)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_SA.h"   
+#elif defined(ADK_USE_ZY_10KEY_MSG_5)
+   #include "ADK_USE_ZY_10KEY_MSG_5.h"   
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC14)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC14_MSG.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_6)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_6.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_7)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_7.h"   
+#elif defined(ADK_USE_ZX_TY_6KEY)
+   #include "ADK_USE_ZX_TY_6KEY_MSG.h"   
+#elif defined(adk_user_07vpowerplay_5key_call_mode)    //二极管 PP+POWER  PREV NEXT MODE CALL
+   #include "adk_user_07vpowerplay_5key_call_mode.h"   
+#elif defined(adk_user_07vpower_6key_mode)    //   9 8 7  power  PP   prev  next  mode   light
+   #include "adk_user_07vpower_6key_mode.h"   
+#elif defined(ADK_USE_GENERAL_10KEY_MSG)
+   #include "ADK_USE_GENERAL_10KEY_MSG.h"   
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC12)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC12_MSG.h"   
+#elif defined(ADK_USE_LT_GENERAL_10Kup_15KEY_REC_SPEC)
+   #include "ADK_USE_LT_GENERAL_10Kup_15KEY_REC_SPEC_MSG.h"   
+#elif defined(ADK_USE_HX_GENERAL_22Kup_10KEY)
+#include "ADK_USE_HX_GENERAL_22Kup_10KEY_MSG.h"   
+#elif defined(AKD_USE_ZY_15KEY_MSG)
+   #include "AKD_USE_ZY_15KEY_MSG.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK_1)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK_1.h"   
+#elif defined(ADK_USE_WTW_GENERAL_10KEY)
+   #include "ADK_USE_WTW_GENERAL_10KEY.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK_2)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_KOK_2.h"   
+#elif defined(ADK_USE_LH_GENERAL_22Kup_10KEY_KOK)
+   #include "ADK_USE_LH_GENERAL_22Kup_10KEY_KOK.h"   
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_5KEY)
+   #include "ADK_USE_ZY_GENERAL_22Kup_5KEY.h"   
+#elif defined(ADK_USE_HY_GENERAL_15KEY)
+   #include "ADK_USE_HY_GENERAL_15KEY_MSG.h"   
+#elif defined(AKD_USE_ZY_12KEY_MSG)
+   #include "AKD_USE_ZY_12KEY_MSG.h"     
+#elif defined(ADK_USE_TF_10KEY_MSG)
+   #include "ADK_USE_TF_10KEY_MSG.h"   
+#elif defined(ADK_USE_TF_DY015_10KEY_MSG)
+   #include "ADK_USE_TF_DY015_10KEY_MSG.h"   
+#elif defined(ADK_USE_HY_22KEY_MSG)
+   #include "ADK_USE_HY_22KEY_MSG.h"   
+#elif defined(ADK_USE_HY_GENERAL_11KEY)
+   #include "ADK_USE_HY_GENERAL_11KEY_MSG.h"   
+#elif defined(ADK_USE_HY_GENERAL_11KEY_2)
+   #include "ADK_USE_HY_GENERAL_11KEY_2_MSG.h"   
+#elif defined(ADK_USE_HY_GENERAL_11KEY_3)
+   #include "ADK_USE_HY_GENERAL_11KEY_3_MSG.h"   
+#elif defined(ADK_USE_HY_GENERAL_REC_11KEY)
+   #include "ADK_USE_HY_GENERAL_REC_11KEY_MSG.h"   
+#elif defined(ADK_USE_SSM_12KEY_MSG)
+   #include "ADK_USE_SSM_12KEY_MSG.h"   
+#elif defined(ADK_USE_SSM_24KEY_MSG)
+   #include "ADK_USE_SSM_24KEY_MSG.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG)
+   #include "ADK_USE_SSM_24KEY_REC_MSG.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_1)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_1.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_3)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_3.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_5)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_5.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_4)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_4.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_VOICE)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_VOICE.h"   
+#elif defined(ADK_USE_SSM_24KEY_REC_MSG_2)
+   #include "ADK_USE_SSM_24KEY_REC_MSG_2.h"   
+#elif defined(ADK_USE_TY_GENERAL_12KEY_MSG)
+   #include "ADK_USE_TY_GENERAL_12KEY_MSG.h"   
+#elif defined(ADK_USE_ZY_10KEY_MSG)
+   #include "ADK_USE_ZY_10KEY_MSG.h"  
+#elif defined(ADK_USE_ZY_10KEY_MSG_REC)
+   #include "ADK_USE_ZY_10KEY_MSG_REC.h"  
+#elif defined(ADK_USE_ZY_10KEY_RGB_MSG)
+   #include "ADK_USE_ZY_10KEY_RGB_MSG.h"  
+#elif defined(ADK_USE_ZY_10KEY_MSG_2)
+   #include "ADK_USE_ZY_10KEY_MSG_2.h"  
+#elif defined(ADK_USE_HY_ZY_10KEY_MSG)
+   #include "ADK_USE_HY_ZY_10KEY_MSG.h"  
+#elif defined(ADK_USE_ZY_MOGONG_12KEY_msg)
+   #include "ADK_USE_ZY_MOGONG_12KEY_msg.h"   
+#elif defined(ADK_USE_ZY_MOGONG_11KEY)
+   #include "ADK_USE_ZY_MOGONG_11KEY_msg.h"   
+#elif defined(ADK_USE_GW_GENERAL_10KEY_MSG)
+   #include "ADK_USE_GW_GENERAL_10KEY_MSG.h"   
+#elif defined(ADK_USE_GW_22Kup_48PIN_GENERAL_3KEY)
+   #include "ADK_USE_GW_22Kup_48PIN_GENERAL_3KEY_MSG.h"   
+#elif defined(ADK_USE_GW_TB01_1KEY)
+   #include "ADK_USE_GW_TB01_1KEY.h"   
+#elif defined(ADK_USE_GW_22Kup_48PIN_GENERAL_11KEY)
+   #include "ADK_USE_GW_22Kup_48PIN_GENERAL_11KEY.h"   
+#elif defined(ADK_USE_GW_22Kup_48PIN_GENERAL_11KEY_kok)
+   #include "ADK_USE_GW_22Kup_48PIN_GENERAL_11KEY_kok.h"   
+#elif defined(ADK_USE_GW_22Kup_11KEY_004_SPEC)
+   #include "ADK_USE_GW_22Kup_11KEY_004_SPEC.h"   
+#elif defined(ADK_USE_GW_22Kup_48PIN_11KEY_SPEC01)
+   #include "ADK_USE_GW_22Kup_48PIN_11KEY_SPEC01.h"   
+#elif defined(ADK_USE_SM_GENERAL_10KEY_MSG)
+   #include "ADK_USE_SM_GENERAL_10KEY_MSG.h"   
+#elif defined(IO_ZX_6KEY_MODE)
+   #include "IO_ZX_6KEY_MODE_MSG.h"      
+#elif defined(ADK_USE_ZY_26KEY_MSG)
+   #include "ADK_USE_ZY_26KEY_MSG.h"      
+#elif defined(ADK_USE_ZY_26KEY_MSG_1)
+   #include "ADK_USE_ZY_26KEY_MSG_1.h"      
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC10)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC10_MSG.h"      
+#elif defined(IO_KEY_USE_MSJ_VFD35_9KEY_MODE)
+   #include "IO_KEY_USE_MSJ_VFD35_9KEY_MODE_MSG.h"      
+#elif defined(ADK_USE_SM_GENERAL_12KEY_MSG)
+   #include "ADK_USE_SM_GENERAL_12KEY_MSG.h"      
+#elif defined(ADK_USE_SL_SY61P_12KEY)
+   #include "ADK_USE_SL_SY61P_12KEY_MSG.h"      
+#elif defined(ADK_USE_MSJ_GENERAL_13KEY)
+   #include "ADK_USE_MSJ_GENERAL_13KEY_MSG.h"         
+#elif defined(ADK_USE_FS_GENERAL_10KEY)
+   #include "ADK_USE_FS_GENERAL_10KEY_MSG.h"    
+#elif defined(ADK_USE_FS_GENERAL_REC_10KEY)
+   #include "ADK_USE_FS_GENERAL_REC_10KEY_MSG.h"         
+#elif defined(ADK_USE_ZX_602YG_4KEY)
+   #include "ADK_USE_ZX_602YG_4KEY_MSG.h"   
+#elif defined(ADK_USE_HW_GENERAL_10KEY)
+   #include "ADK_USE_HW_GENERAL_10KEY_MSG.h"  
+#elif defined(ADK_USE_ZY_CY_10Kup_15KEY_SPEC)
+   #include "ADK_USE_ZY_CY_10Kup_15KEY_SPEC_MSG.h"   
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC9)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC9_MSG.h"   
+#elif defined(ADK_USE_ZY_CY_10Kup_15KEY_SPEC1)
+   #include "ADK_USE_ZY_CY_10Kup_15KEY_SPEC1_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC2)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC2_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC3)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_SPEC3_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_NOREC_SPEC)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_NOREC_SPEC_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC11)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC11_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC8)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC8_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC7)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC7_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC5)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC5_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_17KEY_REC_SPEC_1)
+   #include "ADK_USE_ZY_GENERAL_10Kup_17KEY_REC_SPEC_1_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC3)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC3_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC13)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC13_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC1)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC1_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC6)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC6_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC4)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC4_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC2)
+   #include "ADK_USE_ZY_GENERAL_10Kup_15KEY_REC_SPEC2_MSG.h" 
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC1)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC1.h" 
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC2)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC2.h" 
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC3)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC3.h" 
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC4)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC4.h" 
+#elif defined(ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC5)
+   #include "ADK_USE_ZY_GENERAL_22Kup_10KEY_REC_SPEC5.h" 
+#elif defined(ADK_USE_ZY_XH_10Kup_15KEY_SPEC)
+   #include "ADK_USE_ZY_XH_10Kup_15KEY_SPEC_MSG.h" 
+#elif defined(ADK_USE_ZY_CY_10Kup_15KEY_SPEC2)
+   #include "ADK_USE_ZY_CY_10Kup_15KEY_SPEC2_MSG.h"   
+#elif defined(ADK_USE_ZY_YS3608_10Kup_15KEY_SPEC)
+   #include "ADK_USE_ZY_YS3608_10Kup_15KEY_SPEC_MSG.h"   
+#elif defined(ADK_USE_ZY3053_10Kup_7KEY_SPEC)
+   #include "ADK_USE_ZY3053_10Kup_7KEY_SPEC_MSG.h"   
+#elif defined(ADK_USE_DJ_AC4601C_10Kup_11KEY_SPEC)
+   #include "ADK_USE_DJ_AC4601C_10Kup_11KEY_SPEC_MSG.h"   
+#elif defined(ADK_USE_SW_3K3up_6KEY)   
+   #include "ADK_USE_SW_3K3up_6KEY_MSG.h"   
+#elif defined(ADK_USE_SS_10KEY)   
+   #include "ADK_USE_SS_10KEY_MSG.h"   
+#elif defined(ADK_USE_ZY1058B_10Kup_10KEY)   
+   #include "ADK_USE_ZY1058B_10Kup_10KEY_MSG.h"  
+#elif defined(ADK_USE_JH_10Kup_12KEY)   
+   #include "ADK_USE_JH_10Kup_12KEY_msg.h"   
+#elif defined(ADK_USE_GW_22Kup_48PIN_HG_REC_11KEY)   
+   #include "ADK_USE_GW_22Kup_48PIN_HG_REC_11KEY_msg.h"   
+#elif defined(ADK_USE_ZY_10KEY_MSG_JP_SPEC)   
+   #include "ADK_USE_ZY_10KEY_MSG_JP_SPEC.h"   
+#elif defined(ADK_USE_JH_24KEY_REC_MSG)
+   #include "ADK_USE_JH_24KEY_REC_MSG.h"   
+#elif defined(ADK_USE_JH_10Kup_10KEY)
+   #include "ADK_USE_JH_10Kup_10KEY.h"   
+#elif defined(ADK_USE_JH_10Kup_REC_10KEY)
+   #include "ADK_USE_JH_10Kup_REC_10KEY.h"   
+#elif defined(ADK_USE_XF_10Kup_11KEY)
+   #include "ADK_USE_XF_10Kup_11KEY.h"   
+#elif defined(LED_KEY_USE_XL2781_2BYRG_5KEY)
+   #include "LED_KEY_USE_XL2781_2BYRG_5KEY.h"  
+  #elif defined(IO_KEY_USE_BJ001_4KEY_MODE)
+   #include "IO_KEY_USE_BJ001_4KEY_MODE_MSG.h"      
+#else 
+
+#endif 
+
+
+// ir 
+
+#ifdef ir_user_kpl_ty_msg
+      #include "ir_ty_32key_msg.h"
+#elif defined(IR_FF00_003_21KEY)
+      #include "IR_FF00_003_21KEY_msg.h"
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_7)
+      #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_7_MSG.h"
+#elif defined(IR_GW_K16_28_DF20_GENERAL_10KEY)
+      #include "IR_GW_K16_28_DF20_GENERAL_10KEY_MSG.h"
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_8)
+      #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_8_MSG.h"
+#elif defined(IR_FF00_004_21KEY)
+      #include "IR_FF00_004_21KEY_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_TY_00FF_807F_22KEY)
+      #include "IR_ZY_DOUBLE_GENERAL_TY_00FF_807F_22KEY_MSG.h"
+#elif defined(IR_ZY_01FE_MP5_IR_21KEY)
+      #include "IR_ZY_01FE_MP5_IR_21KEY_msg.h"
+#elif defined(IR_HX_FF00_21KEY)
+      #include "IR_HX_FF00_21KEY_msg.h"
+#elif defined(IR_ZY_JERRY_00FF_21KEY)
+      #include "IR_ZY_JERRY_00FF_21KEY_msg.h"
+#elif defined(IR_TY_DOUBLE_00FF_807F_26KEY)
+      #include "IR_TY_DOUBLE_00FF_807F_26KEY_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_9)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_9_msg.h"	 
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_REC)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_REC_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_00FF_807F_22KEY)
+     #include "IR_ZY_DOUBLE_GENERAL_00FF_807F_22KEY_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_7)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_7_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_SA)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_SA_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_10)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_10_msg.h"
+#elif defined(IR_ZY_THREE_YK2119_FF00_807F_CF30_25KEY)
+     #include "IR_ZY_THREE_YK2119_FF00_807F_CF30_25KEY_msg.h"
+#elif defined(IR_ZY_THREE_hd6992_FF00_807F_CF30_25KEY)
+     #include "IR_ZY_THREE_hd6992_FF00_807F_CF30_25KEY_msg.h"
+#elif defined(IR_ZY_HD7369_807F_25KEY)
+     #include "IR_ZY_HD7369_807F_25KEY_msg.h"
+#elif defined(IR_ZY_HD7369_807F_25KEY_2)
+     #include "IR_ZY_HD7369_807F_25KEY_2_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_2)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_2_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_8)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_8_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_6)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_6_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_3)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_3_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_4)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_4_msg.h"
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_5)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_5_msg.h"
+#elif defined(IR_ZY_NEW_DOUBLE_GENERAL_00FF_807F_26KEY)
+     #include "IR_ZY_NEW_DOUBLE_GENERAL_00FF_807F_26KEY_msg.h"     
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_HD7369_807F_26KEY)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_HD7369_807F_26KEY_msg.h"     
+#elif defined(IR_ZY_NEW_DOUBLE_GENERAL_00FF_ADJ_BRAND_807F_26KEY)
+     #include "IR_ZY_NEW_DOUBLE_GENERAL_00FF_ADJ_BRAND_807F_26KEY_msg.h"     
+#elif defined(IR_ZY_THREE_GENERAL_YK2119_00FF_807F_FE01_25KEY)
+     #include "IR_ZY_THREE_GENERAL_YK2119_00FF_807F_FE01_25KEY_msg.h"     
+#elif defined(IR_TF_THREE_GENERAL_FF00_FD02_7F80)    
+     #include "IR_TF_THREE_GENERAL_FF00_FD02_7F80_msg.h"	 
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_1)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_1_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_6)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_6_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_5)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_5_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_3)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_3_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_04FB_REC)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_04FB_REC_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC)    
+     #include "IR_SSM_THREE_GENERAL_FE01_7F80_04FB_REC_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_04FB_REC_SA)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_04FB_REC_SA_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_04FB_VOICE)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_04FB_VOICE_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_04FB_INTROL)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_04FB_INTROL_msg.h"	  	 
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_4)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_4_msg.h"	  
+#elif defined(IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_2)    
+     #include "IR_SSM_THREE_GENERAL_FF00_7F80_FE01_REC_2_msg.h"	  
+#elif defined(IR_MSJ_DOUBLE_GENERAL_FF00_7F80)    
+     #include "IR_MSJ_DOUBLE_GENERAL_FF00_7F80_msg.h"	
+#elif defined(IR_MSJ_THREE_FF00_7F80_FE01_SPEC_24KEY)    
+     #include "IR_MSJ_THREE_FF00_7F80_FE01_SPEC_24KEY_msg.h"	
+#elif defined(IR_ZY_THREE_GENERAL_YK2119_00FF_807F_01FE_25KEY)    
+     #include "IR_ZY_THREE_GENERAL_YK2119_00FF_807F_01FE_25KEY_msg.h"	 
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_OK)    
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_OK_msg.h"	 
+#elif defined(IR_ZX_ONE_00FF_GENERAL_21KEY)    
+     #include "IR_ZX_ONE_00FF_GENERAL_21KEY_msg.h"	 
+#elif defined(IR_FF00_005_21KEY)    
+     #include "IR_FF00_005_21KEY_msg.h"	 
+#elif defined(IR_FF00_006_21KEY)    
+     #include "IR_FF00_006_21KEY_msg.h"	 
+#elif defined(IR_FE01_007_26KEY)    
+     #include "IR_FE01_007_26KEY_msg.h"	 
+#elif defined(IR_SM_TWO_FF00_24KEY)    
+     #include "IR_SM_TWO_FF00_24KEY_msg.h"	 
+#elif defined(IR_HC_ONE_GENERAL_00FF_10KEY)    
+     #include "IR_HC_ONE_GENERAL_00FF_10KEY_msg.h"	   
+#elif defined(IR_SL_SP61P_FF00_008_21KEY)    
+     #include "IR_SL_SP61P_FF00_008_21KEY_msg.h"	
+#elif defined(IR_FS_BF00_009_18KEY)    
+     #include "IR_FS_BF00_009_18KEY_msg.h"	
+#elif defined(IR_FF00_010_21KEY)    
+     #include "IR_FF00_010_21KEY_msg.h"	
+#elif defined(IR_GW_FF00_GENERAL_23KEY)    
+     #include "IR_GW_FF00_GENERAL_23KEY_msg.h"	
+#elif defined(IR_ZY_k16ty27_FF00_GENERAL_23KEY)    
+     #include "IR_ZY_k16ty27_FF00_GENERAL_23KEY_msg.h"	
+#elif defined(IR_ZY_k16ty27_FF00_GENERAL_23KEY_TY)    
+     #include "IR_ZY_k16ty27_FF00_GENERAL_23KEY_TY_msg.h"	
+#elif defined(IR_DJ_THREE_GENERAL_00FF_807F_24KEY)    
+     #include "IR_DJ_THREE_GENERAL_00FF_807F_24KEY_msg.h"	
+#elif defined(IR_ZX_HL601_QGN_FF00_35KEY)    
+     #include "IR_ZX_HL601_QGN_FF00_35KEY_msg.h"	
+#elif defined(IR_ZX_TY13_7F80_33KEY)    
+     #include "IR_ZX_TY13_7F80_33KEY_msg.h"	
+#elif defined(IR_ZX_HD7175_FE01_25KEY)    
+     #include "IR_ZX_HD7175_FE01_25KEY_msg.h"	
+#elif defined(IR_JH_001_FF00_22_KEY)    
+     #include "IR_JH_001_FF00_22_KEY_msg.h"	 
+#elif defined(IR_GW_SA_001_FF00_21KEY)    
+     #include "IR_GW_SA_001_FF00_21KEY_msg.h"	
+#elif defined(IR_USE_HL_Q1_FF00_22KEY)    
+     #include "IR_USE_HL_Q1_FF00_22KEY_msg.h"	 
+#elif defined(IR_SUOAI_001_FF00_21KEY)    
+     #include "IR_SUOAI_001_FF00_21KEY_msg.h"	 
+#elif defined(IR_SSM_SA_00FF_IR_25KEY)    
+     #include "IR_SSM_SA_00FF_IR_25KEY_msg.h"	 
+#elif defined(IR_SUOAI_001_FF00_21KEY_VOICE)    
+     #include "IR_SUOAI_001_FF00_21KEY_VOICE_msg.h"	 
+#elif defined(IR_SUOAI_001_FF00_21KEY_VOICE_1)    
+     #include "IR_SUOAI_001_FF00_21KEY_VOICE_1_msg.h"	 
+#elif defined(IR_XF_FF00_807F_25KEY)    
+     #include "IR_XF_FF00_807F_25KEY_msg.h"	 
+#elif defined(IR_JH_FF00_GENERAL_21KEY)    
+     #include "IR_JH_FF00_GENERAL_21KEY_msg.h"	 
+#elif defined(IR_USER_KPL_002)
+     #include "IR_USER_KPL_002_msg.h"	 
+#elif defined(IR_TY_DOUBLE_00FF_807F_23KEY)
+     #include "IR_TY_DOUBLE_00FF_807F_23KEY_msg.h"	 
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_11)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_807F_22KEY_11_msg.h"	 
+#elif defined(IR_ZY_DOUBLE_GENERAL_YK2119_00FF_ALP102_807F_22KEY)
+     #include "IR_ZY_DOUBLE_GENERAL_YK2119_00FF_ALP102_807F_22KEY_msg.h"	 
+#elif defined(IR_USER_ty_001_FTC334M_7F80)
+     #include "IR_USER_ty_001_FTC334M_7F80_msg.h"	 
+#else 
+ #include "ir_ty_21key_msg.h"
+#endif 
+
+
